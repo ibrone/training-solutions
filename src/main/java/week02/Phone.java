@@ -7,6 +7,11 @@ public class Phone {
     public String type;
     public int mem;
 
+    public Phone (String type, int mem){
+        this.type = type;
+        this.mem = mem;
+    }
+
     public String getType() {
         return type;
     }
@@ -28,11 +33,22 @@ public class Phone {
 
 
         System.out.println("Kérem a telefon típusát: ");
-       String type = scanner.nextLine();
+       String typeA = scanner.nextLine();
         System.out.println("Kérem a telefon memódia méretét:");
-int mem = scanner.nextInt();
-        System.out.println(type);
-        System.out.println(mem);
-            }
+int memA = scanner.nextInt();
+scanner.nextLine();
+
+Phone telefonA = new Phone (typeA,memA);
+
+        System.out.println("Típus megadása: ");
+        typeA = scanner.nextLine();
+        System.out.println("Mem megadása: ");
+            memA = scanner.nextInt();
+    Phone telefonB = new Phone(typeA,memA);
+
+        System.out.println(telefonA.getType() + " " + telefonA.getMem());
+        System.out.println(telefonB.getType() + " " + telefonB.getMem());
+
+    }
 
 } // 6 percet adtatok rá, eddig jutottam
