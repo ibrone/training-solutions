@@ -1,4 +1,4 @@
-package statenents;
+package statements;
 
 import java.util.Scanner;
 
@@ -25,7 +25,7 @@ public class TimeMain {
 
         Time time2 = new Time(hour2,minutes2,seconds2);
 
-        System.out.println ("Az 1. megadott pontos idő: " + hour + ":" + minutes + ":" + seconds +"Percben megadva: "time1.getInMinutes()+ "perc");
+        System.out.println ("Az 1. megadott pontos idő: " + hour + ":" + minutes + ":" + seconds +"Percben megadva: ");
         System.out.println("A 2. megadott pontos idő: " + hour2 + ":" + minutes2 + ":" + seconds2);
 
 
