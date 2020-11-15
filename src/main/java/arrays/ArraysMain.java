@@ -14,7 +14,7 @@ public class ArraysMain {
     public List<String> daysofWeek(){
         return Arrays.asList("Hétfő","Kedd","Szerda","Csütörtök","Péntek","Szombat","Vasárnap");
     }
-}
+
 
     public String multiplicationTableAsString(int size) {
         int[][] multiplicationTable = new int[size][size];
