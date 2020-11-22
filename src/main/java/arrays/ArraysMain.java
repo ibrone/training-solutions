@@ -25,4 +25,16 @@ public class ArraysMain {
         }
         return Arrays.deepToString(multiplicationTable);
     }
+
+    public boolean sameTempValues (double[] day, double [] anotherDay){
+        return Arrays.equals(day, anotherDay);
+    }
+
+        public  boolean wonLottery (int[] egyik, int[] masik){
+        int [] copyofegyik = Arrays.copyOf(egyik, egyik.length);
+        int [] copyofmasik = Arrays.copyOf(masik, masik.length);
+        Arrays.sort(copyofegyik);
+        Arrays.sort (copyofmasik);
+        return Arrays.equals(copyofegyik,copyofmasik);
+        }
 }
