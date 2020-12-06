@@ -15,6 +15,9 @@ private String zipCode;
         this.zipCode = zipCode;
     }
 
+
+
+
     public void correctData (String country, String city, String streetAndNumber, String zipCode){
         this.country = country;
         this.city = city;

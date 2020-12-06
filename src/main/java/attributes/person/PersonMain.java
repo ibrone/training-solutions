@@ -1,14 +1,12 @@
 package attributes.person;
+import java.util.List;
+import java.util.ArrayList;
+import java.util.Arrays;
 
 public class PersonMain {
-
-
-
     public static void main(String[] args) {
-        Address address = new Address("Magyarország","Érd","Jenő 1", "2030");
-
-
-        System.out.println(address.addresstoString());
-    }
-
-}
+        String s = null;
+        s = "foo";
+        s.toUpperCase();
+        System.out.println(s);
+}}

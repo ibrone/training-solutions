@@ -1,8 +1,13 @@
 package classtructureio;
 
 import java.util.Scanner;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
 public class calculator {
+
+    String names [];
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -15,6 +20,9 @@ public class calculator {
         int number2 = scanner.nextInt();
         System.out.println(number1 + " + " + number2);
         System.out.println(number1 + number2);
+
+
+
     }
 
 
