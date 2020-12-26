@@ -2,13 +2,13 @@ package introjunit;
 
 
 
-import org.introjunit.jupiter.api.Test;
+
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class GentlemanTest {
 
-    @Test
+
     public void byNormalName() {
         // Given
         String name = "John Doe";
