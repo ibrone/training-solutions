@@ -1,6 +1,6 @@
 package classstructureintegrate;
 
-public class BankAccount {
+public class BankAccount implements Comparable<BankAccount> {
 
     private int balance;
 
