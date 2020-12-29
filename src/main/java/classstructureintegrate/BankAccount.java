@@ -18,4 +18,9 @@ public class BankAccount implements Comparable<BankAccount> {
     public void transfer (BankAccount targetBankAccount, int amount){
 balance = balance - amount;
     targetBankAccount.setBalance(targetBankAccount.getBalance() + amount  );}
+
+    @Override
+    public int compareTo(BankAccount o) {
+        return 0;
+    }
 }
