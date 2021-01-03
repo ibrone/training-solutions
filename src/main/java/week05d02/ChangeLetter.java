@@ -3,6 +3,7 @@ package week05d02;
 public class ChangeLetter {
 
     public static final String VOWELS = "aeiou";
+    public static final char [] VOWELS_CHAR = {'a','e','i','o','u'};
 
     public String changeVowels (String temp){
         temp = temp.toLowerCase() ;
@@ -17,5 +18,10 @@ public class ChangeLetter {
         }
         return sb.toString();    }
 
-
+    public String changeVowels2 (String temp){
+    for (char c:  VOWELS_CHAR){
+        temp = temp.replace(c, '*');
+        }
+    return temp;
+    }
 }
