@@ -41,4 +41,3 @@ public class Capsules {
         System.out.println(capsules.getColors());
     }
 }
-///átnézem majd de most sietek utolérni a tananyagot
