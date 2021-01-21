@@ -1,6 +1,5 @@
-package week03;
+package week03d02;
 
-import java.sql.PreparedStatement;
 import java.util.ArrayList;
 import java.util.List;
 

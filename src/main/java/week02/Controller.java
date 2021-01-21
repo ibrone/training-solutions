@@ -42,14 +42,14 @@ public class Controller {
         scanner.nextLine();
 
         for (int i = 0; i < numberOfMeetingRooms; i++) {
-            System.out.println("Add meg a nevet!");
+            System.out.println("Add meg a nevet:");
             String name = scanner.nextLine();
 
-            System.out.println("Add meg a szélességet!");
+            System.out.println("Add meg a szélességet:");
             int width = scanner.nextInt();
             scanner.nextLine();
 
-            System.out.println("Add meg a hosszúságot!");
+            System.out.println("Add meg a hosszúságot:");
             int length = scanner.nextInt();
             scanner.nextLine();
 

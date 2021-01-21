@@ -1,7 +1,5 @@
-package week02d05;
+package week02d04;
 
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Scanner;
 
 public class InputNames {
