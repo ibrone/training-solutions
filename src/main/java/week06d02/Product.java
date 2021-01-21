@@ -1,4 +1,4 @@
-package week06d02junior;
+package week06d02;
 
 
 

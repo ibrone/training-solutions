@@ -1,9 +1,9 @@
 package week06d02juniur;
 
 import org.junit.Test;
-import week06d02junior.Category;
-import week06d02junior.Product;
-import week06d02junior.Store;
+import week06d02.Category;
+import week06d02.Product;
+import week06d02.Store;
 
 import java.util.Arrays;
 
