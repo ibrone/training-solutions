@@ -1,4 +1,4 @@
-package methodargvars.examstats;
+package methodvargargs.examstats;
 
 
 import org.junit.jupiter.api.AfterEach;

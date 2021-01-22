@@ -1,4 +1,4 @@
-package methodargvars.examstats;
+package methodvargargs.examstats;
 
 public class ExamStats {
 

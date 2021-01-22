@@ -1,4 +1,4 @@
-package records;
+package schoolrecords;
 public class StudyResultByName {
 
     private double studyAverage;
