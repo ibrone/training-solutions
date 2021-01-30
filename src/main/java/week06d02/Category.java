@@ -1,5 +1,5 @@
 package week06d02;
 
 public enum     Category {
-    FROZEN,BAKEDGOODS,DAIRY,OTHER,HOUSEKEPPING;
+    FROZEN,BAKEDGOODS,DAIRY,OTHER;
 }
