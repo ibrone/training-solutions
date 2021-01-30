@@ -20,7 +20,7 @@ public class StoreTest {
                 new Product("Joghurt",Category.DAIRY,150)
         ));
     assertEquals(2,store.getProductByCategoryName(Category.BAKEDGOODS));
-    assertEquals(1,store.getProductByCategoryName(Category.HOUSEKEPPING));
+
 
     }
 
