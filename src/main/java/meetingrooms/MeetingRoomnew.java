@@ -1,20 +1,15 @@
-package week02;
+package meetingrooms;
 
-public class MeetingRoom {
-
+public class MeetingRoomnew {
 
     private String name;
     private int length;
     private int width;
 
-    public MeetingRoom(String name, int length, int width) {
+    public MeetingRoomnew(String name, int length, int width) {
         this.name = name;
         this.length = length;
         this.width = width;
-    }
-
-    public int getArea() {
-        return length * width;
     }
 
     public String getName() {
@@ -41,9 +36,13 @@ public class MeetingRoom {
         this.width = width;
     }
 
+    public int getArea(){
+        return width * length;
+    }
+
     @Override
     public String toString() {
-        return "MeetingRoom{" +
+        return "MeetingRoomnew{" +
                 "name='" + name + '\'' +
                 ", length=" + length +
                 ", width=" + width +

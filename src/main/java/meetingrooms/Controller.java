@@ -1,9 +1,7 @@
-package week02;
+package meetingrooms;
 
 
 import java.util.Scanner;
-import java.util.ArrayList;
-import java.util.List;
 
 public class Controller {
 
