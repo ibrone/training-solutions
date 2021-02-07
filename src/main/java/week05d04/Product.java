@@ -1,29 +1,33 @@
 package week05d04;
 
-import java.time.LocalDate;
-
 public class Product {
 
-    private String name;
-    private LocalDate expiringtime;
+    private long price;
+    private Currency currency;
 
-    public Product(String name, int year, int month, int day) {
-        this.name = name;
-        this.expiringtime= LocalDate.of(year,month,day);
+    public Product(long price, Currency currency) {
+        this.price = price;
+        this.currency = currency;
+
     }
 
-    public String getName() {
-        return name;
-    }
 
-    public LocalDate getExpiringtime() {
-        return expiringtime;
+    public double converPrice (Currency currency){
+        checkCurrency(currency);
+        if (this.currency.equals("HUF") && currency.equals("USD")){
+            return price / 300;
     }
+    if (this.currency.equals("USD") && currency.equals("HUF")) {
+        return price * 300;
+    }
+    return price;
 
-    public boolean isExpired(){
-        if (expiringtime.isBefore(LocalDate.now())){
-        return true;
-        }return false;
-    }
 }
+ private void checkCurrency(Currency currency){
+     boolean valid = "HUF".equals(currency)||"USD".equals(currency);
+     if(valid)
+         throw new IllegalArgumentException(String.format("Currency (%s) can only be HUF or USD",currency));
 
+ }
+
+}
