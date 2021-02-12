@@ -20,12 +20,12 @@ public class LabTest {
         Lab lab = new Lab("Task1", LocalDateTime.of(2020,12,9,10,0));
         assertEquals("Task1", lab.getTitle());
         assertTrue(lab.isCompleted());
-        assertEquals(LocalDateTime.of(2020, 12,9,10,0) lab.getCompletedAt());
+        assertEquals(LocalDateTime.of(2020, 12,9,10,0), lab.getCompletedAt());
     }
 
     @Test
     public void completeNowTest(){
-        Lab lab = new lab ("Task1");
+        Lab lab = new Lab ("Task1");
         lab.complete();
         assertTrue(lab.isCompleted());
         assertEquals(LocalDateTime.now(), lab.getCompletedAt());
