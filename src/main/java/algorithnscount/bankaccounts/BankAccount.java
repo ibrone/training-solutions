@@ -20,7 +20,7 @@ private int balance;
         return accountNumber;
     }
 
-    public static int getBalance() {
+    public  int getBalance() {
         return balance;
     }
 }
