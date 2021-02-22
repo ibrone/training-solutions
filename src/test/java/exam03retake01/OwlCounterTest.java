@@ -2,23 +2,22 @@ package exam03retake01;
 
 import org.junit.jupiter.api.Test;
 
-import java.util.List;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class MailTest {
+public class OwlCounterTest {
 
     @Test
-    void create() {
-        Mail mail = new Mail(new Contact("John Doe", "johndoe@example.com"),
-                List.of(new Contact("Jane Doe", "janedoe@example.com"), new Contact("John Doe", "jackdoe@example.com")),
-                "Doe Family",
-                "Hi All!");
-
-//        assertEquals("John Doe", mail.getFrom().getName());
-//        assertEquals("Jane Doe", mail.getTo().get(0).getName());
-//        assertEquals("jackdoe@example.com", mail.getTo().get(1).getEmail());
-//        assertEquals("Doe Family", mail.getSubject());
-//        assertEquals("Hi All!", mail.getMessage());
-//    }
-//}
+    void load() throws IOException {
+        OwlCounter owlCounter = new OwlCounter();
+        try (BufferedReader reader = new BufferedReader(new InputStreamReader(OwlCounterTest.class.getResourceAsStream("owls.txt")))) {
+            owlCounter.readFromFile(reader);
+        }
+        assertEquals(1000, owlCounter.getNumberOfOwls("Bács-Kiskun"));
+        assertEquals(893, owlCounter.getNumberOfOwls("Somogy"));
+        assertEquals(135, owlCounter.getNumberOfOwls("Zala"));
+    }
+}
