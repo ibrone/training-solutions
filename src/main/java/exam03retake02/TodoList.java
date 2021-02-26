@@ -1,6 +1,6 @@
 package exam03retake02;
 
-import jdk.internal.icu.text.UTF16;
+
 
 import java.util.ArrayList;
 
@@ -21,7 +21,7 @@ public class TodoList {
         return TodoList;
     }
 
-    public int getNumberOfItemsLeft() {
+//    public int getNumberOfItemsLeft() {
 
 //    int sum =0;
 //
@@ -29,15 +29,16 @@ public class TodoList {
 //        return sum++;
 //    }
 //    return sum;
-    return getNumberOfItemsLeft();
-    }
+//    return getNumberOfItemsLeft();
+//    }
 
-    public List<Todo> getMostImportantTodosText() {
-        if (Todo)
-    }
+//    public List<Todo> getMostImportantTodosText() {
+////        if (Todo)
+//        return ;
+//    }
 
-
-    public List<Todo> deleteCompleted() {
-        if (Todo)
-    }
+//
+//    public List<Todo> deleteCompleted() {
+//        if (Todo)
+//    }
 }
